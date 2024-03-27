@@ -55,7 +55,7 @@ prebuild-checks:
 			[ "$$x" == "./src" ] && continue; \
 			mv -n "$$x" "$(GOPATH)/src/$(PROJNAME)/"; \
 		done; \
-		ln -s "$(GOPATH)/src/$(PROJNAME)/Makefile"; \
+		#ln -s "$(GOPATH)/src/$(PROJNAME)/Makefile"; \
 		[ -e "$(GOPATH)/src/$(PROJNAME)/_doc" ] && ln -s "$(GOPATH)/src/$(PROJNAME)/_doc" doc; \
 		[ -e "$(GOPATH)/src/$(PROJNAME)/_tpl" ] && ln -s "$(GOPATH)/src/$(PROJNAME)/_tpl" tpl; \
 	fi; \
