@@ -37,7 +37,7 @@ BUILDINFO=$(shell (echo built $(BUILDNAME); go list -f '{{range $$imp := .Deps}}
 BUILDINFO_FLAG=
 
 ifeq ($(USE_BUILDINFO),1)
-	BUILDINFO_FLAG= -ldflags "-X github.com/hlandau/degoutils/buildinfo.RawBuildInfo=$(call BUILDINFO,$(1))"
+	BUILDINFO_FLAG= -ldflags "-X github.com/empyrz/degoutils/buildinfo.RawBuildInfo=$(call BUILDINFO,$(1))"
 endif
 
 ## Standard Rules
