@@ -1,4 +1,4 @@
-PROJNAME=github.com/hlandau/tftp2httpd
+PROJNAME=github.com/empyrz/tftp2httpd
 BINARIES=$(PROJNAME)
 
 ###############################################################################
@@ -42,7 +42,7 @@ endif
 
 ## Standard Rules
 all: prebuild-checks $(DIRS)
-	$(call QI,GO-INSTALL,$(BINARIES))go install $(BUILDFLAGS) $(call BUILDINFO_FLAG,$(BINARIES)) $(BINARIES)
+	$(call QI,GO-INSTALL,$(BINARIES))go install $(BUILDFLAGS) $(call BUILDINFO_FLAG,$(BINARIES)) $(BINARIES)@latest
 
 prebuild-checks:
 	$(call QI,RELOCATE)if [ `find . -iname '*.go' | grep -v ./src/ | wc -l` != 0 ]; then \
