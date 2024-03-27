@@ -58,7 +58,7 @@ You need the go compiler installed. Clone the repository and run 'make'. The
 daemon will be placed in the bin directory.
 
     # Clone.
-    git clone https://github.com/hlandau/tftp2httpd
+    git clone https://github.com/empyrz/tftp2httpd
     cd tftp2httpd
 
     # Build.
@@ -114,6 +114,10 @@ If you pass `-service.daemon=1`, the daemon will close stdin/stdout/stderr and s
 if possible. The daemon does not currently fork due to limitations with Go.
 
 tftp2httpd will log to syslog when daemonized using the `daemon` facility.
+
+Misc
+----
+In case you have to clear Golang cache : go clean -cache -modcache
 
 TODO
 ----
