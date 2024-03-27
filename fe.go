@@ -5,7 +5,7 @@ import "net/http"
 import "regexp"
 import "github.com/hlandau/xlog"
 import "gopkg.in/hlandau/service.v2"
-import "gopkg.in/hlandau/easyconfig.v1"
+import "github.com/empyrz/easyconfig"
 
 var log, Log = xlog.New("tftp2httpd")
 
