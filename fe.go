@@ -47,7 +47,7 @@ func handler(req *tftpsrv.Request) error {
 		return nil
 	}
 
-	buf := make([]byte, 512)
+	buf := make([]byte, 1468)
 	for {
 		n, err := res.Body.Read(buf)
 		if n > 0 {
