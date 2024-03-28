@@ -1,6 +1,6 @@
 package main
 
-import "github.com/hlandau/tftpsrv"
+import "github.com/empyrz/tftpsrv"
 import "net/http"
 import "regexp"
 import "github.com/hlandau/xlog"
