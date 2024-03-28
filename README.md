@@ -1,3 +1,5 @@
+:warning It seems to be bugged about blocksize
+
 tftp2httpd
 ==========
 tftp2httpd is a daemon written in Go which acts as a TFTP server and proxies
